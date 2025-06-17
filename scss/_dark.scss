@@ -1,0 +1,54 @@
+.theme-dark {
+    --bg-overlay-color: 0 0 0;
+    --bg-overlay-color-inverse: 255 255 255;
+    --bg-overlay-opacity-1: 0.85;
+    --bg-overlay-opacity-2: 0.8;
+    --bg-overlay-opacity-3: 0.7;
+    --bg-overlay-opacity-4: 0.5;
+    --bg-overlay-opacity-5: 0.4;
+    --bg-overlay-opacity-6: 0.1;
+    --bg-overlay-opacity-hover: 0.5;
+    --bg-overlay-opacity-hover-inverse: 0.08;
+    --bg-overlay-opacity-active: 0.45;
+    --bg-overlay-opacity-active-inverse: 0.1;
+    --bg-overlay-opacity-selected: 0.4;
+    --bg-overlay-opacity-selected-inverse: 0.15;
+    --bg-overlay-opacity-chat: 0.8;
+    --bg-overlay-opacity-home: 0.85;
+    --bg-overlay-opacity-home-card: 0.8;
+    --bg-overlay-opacity-app-frame: var(--bg-overlay-opacity-4);
+
+    // Server icons
+    .circleIconButton__5bc7e:not(.selected__5bc7e) {
+        background: rgb(var(--bg-overlay-color-inverse) / var(--bg-overlay-opacity-6));
+    }
+
+    .wrapper__8436d:not(:hover):not(.selected_ae80f7) .childWrapper_a6ce15 {
+        background: rgb(var(--bg-overlay-color-inverse) / var(--bg-overlay-opacity-6));
+    }
+
+    .folder__48112 {
+        background: var(--bg-overlay-6, var(--background-secondary));
+    }
+
+    .expandedFolderBackground__48112 {
+        background: rgb(var(--bg-overlay-color-inverse) / var(--bg-overlay-opacity-6));
+    }
+
+    // Scrollbar
+    .customTheme__99f8c.auto__99f8c::-webkit-scrollbar-thumb,
+    .customTheme__99f8c.thin__99f8c::-webkit-scrollbar-thumb {
+        background-size: 200vh;
+        background-image: linear-gradient(
+                rgb(var(--bg-overlay-color-inverse) / var(--bg-overlay-opacity-4)),
+                rgb(var(--bg-overlay-color-inverse) / var(--bg-overlay-opacity-4))
+            ),
+            var(--custom-theme-background);
+    }
+
+    .customTheme__99f8c.auto__99f8c::-webkit-scrollbar-track {
+        background-size: 200vh;
+        background-image: linear-gradient(rgb(var(--bg-overlay-color) / 0.4), rgb(var(--bg-overlay-color) / 0.4)),
+            var(--custom-theme-background);
+    }
+}
